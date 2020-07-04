@@ -5,7 +5,7 @@ Answer the following questions. First, without external resources. Challenge you
 1. What is a function? Why would you use one?
 
   Your answer:
-  Functions are reusable pieces of code. Can have lots of different code inside such as arguments. They are like a giant umbrella of information and you can name each function.
+  Functions are reusable pieces of code. Can have lots of different code inside such as arguments. They are like a giant umbrella of information. You can name each function. 
 
   Researched answer:
   Functions are blocks of code designed to perform a particular task. It is excevited when "something" invokes it. It always returns an output, can be used many times, and should be as generic as possible.

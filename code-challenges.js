@@ -44,32 +44,22 @@ console.log(boilingPoint(temp3));
 
 var myNumbers1 = [3, 7, 0, 6, -9]
 
-// var arrayLength = array.length
-
 //create a function for the array
 const multBy5 = (array) =>{
     //create a for loop for the array
-    // let
     for(let i = 0; i<array.length; i++){
-     //return and multiply each value at each index by 5. not sure how to bring it back as an array.
-        // return (array[i]*5);
-        console.log(array[i]*5);
+     //return and multiply each value at each index by 5. use *= to multiply each value at each index.
+    array[i] *= 5;
+    // return the array
     }
-    // return array.join("")
-};
-
+    return array;
+}
 //log results
 console.log(multBy5(myNumbers1));
 
-//notes
-// var myArray = [1, 2, 3, 4, 5, 6]
 
-// for(let i = 0; i<myArray.length; i++){
-//   console.log(myArray[i]);
-// }
-
-// --------------------3) Create a function that multiplies each number in the array by 5 using map.
-// Use the test variable provided below. Expected outcome: [40, -35, 0, 30, 10]
+// // --------------------3) Create a function that multiplies each number in the array by 5 using map.
+// // Use the test variable provided below. Expected outcome: [40, -35, 0, 30, 10]
 
 var myNumbers2 = [8, -7, 0, 6, 2]
 
@@ -100,8 +90,8 @@ const faveDrinks = (array) => {
 console.log(faveDrinks(coffeeRun));
 
 
-// --------------------5) Create a function that removes all the vowels from a string.
-// Use the test variables provided below. Expected output: "HyThrLrnStdnt" "LvJvScrpt"
+// // --------------------5) Create a function that removes all the vowels from a string.
+// // Use the test variables provided below. Expected output: "HyThrLrnStdnt" "LvJvScrpt"
 
 var stringWithVowels1 = "HeyThereLearnStudent"
 var stringWithVowels2 = "ILoveJavaScript"
@@ -115,7 +105,7 @@ const newString = (array) => {
         return value !== "a" && value !== "e" && value !== "i" && value !== "o" && value !== "u"
     }
     )
-    //conver the array back into a string and return the string
+    //convert the array back into a string and return the string
     return noVowels.join("")       
 }
 
@@ -124,8 +114,8 @@ console.log(newString(stringWithVowels2));
 
 
 
-// --------------------6) Expand the logic from #4 to inform your user if the variable passed into the vowel removal function is not a string.
-// Copy and paste or rewrite the function. Use the test variables provided below.
+// // --------------------6) Expand the logic from #5 to inform your user if the variable passed into the vowel removal function is not a string.
+// // Copy and paste or rewrite the function. Use the test variables provided below.
 
 
 var stringWithVowels1 = "HeyThereLearnStudent"
@@ -135,10 +125,8 @@ var stringWithVowels4 = 42
 var stringWithVowels5 = "CodingIsGreat"
 
 
-
-
 //declare a function with an array
-const newString = (array) => {
+const newString2 = (array) => {
     // use type of to see if the array that user inputted is not a string, if its not, let user know its "not a string"
     if (typeof array !== "string"){
         return `Looks like ${array} is not a string. Plz try again.`
@@ -155,8 +143,8 @@ const newString = (array) => {
     return noVowels.join("") 
 }};      
 
-console.log(newString(stringWithVowels1));
-console.log(newString(stringWithVowels2));
-console.log(newString(stringWithVowels3));
-console.log(newString(stringWithVowels4));
-console.log(newString(stringWithVowels5));
+console.log(newString2(stringWithVowels1));
+console.log(newString2(stringWithVowels2));
+console.log(newString2(stringWithVowels3));
+console.log(newString2(stringWithVowels4));
+console.log(newString2(stringWithVowels5));
